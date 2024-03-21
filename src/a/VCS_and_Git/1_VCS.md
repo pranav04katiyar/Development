@@ -3,10 +3,14 @@
 Version Control Systems are software tools that help manage changes to source code over time. They keep track of every modification to the code in a special kind of database. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members.
 
 __Why VCS?__
-- Collaboration: Allows multiple people to work on the same codebase simultaneously without overwriting each other's work.
-- Track Changes: Keeps a comprehensive history of project changes, including who made what changes and when, providing a clear audit trail.
-- Revert and Compare: Enables the ability to revert to previous versions of a project, which is crucial for troubleshooting and understanding project evolution.
-- Branching and Merging: Facilitates concurrent development by allowing branching (creating another line of development) and merging (bringing different lines of development together).
+- Collaboration: 
+  > Allows multiple people to work on the same codebase simultaneously without overwriting each other's work.
+- Track Changes:
+  > Keeps a comprehensive history of project changes, including who made what changes and when, providing a clear audit trail.
+- Revert and Compare:
+  > Enables the ability to revert to previous versions of a project, which is crucial for troubleshooting and understanding project evolution.
+- Branching and Merging:
+  > Facilitates concurrent development by allowing branching (creating another line of development) and merging (bringing different lines of development together).
 
 *Types of Version Control Systems*
 -
