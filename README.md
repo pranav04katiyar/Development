@@ -1,7 +1,7 @@
 This repo contains notes related to development topics
 -
 _Foundational topics_:
-- git
+- Git and Version control systems
 - APIs
 - Spring
 - Databases & ORMC
