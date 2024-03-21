@@ -1,4 +1,4 @@
-***Version Control Systems***
+**Version Control Systems**
 ---
 Version Control Systems are software tools that help manage changes to source code over time. They keep track of every modification to the code in a special kind of database. If a mistake is made, developers can turn back the clock and compare earlier versions of the code to help fix the mistake while minimizing disruption to all team members.
 
