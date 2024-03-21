@@ -15,7 +15,7 @@ __Why VCS?__
 *Types of Version Control Systems*
 -
 **Centralized Version Control Systems (CVCS):**
-> In CVCS, all files and historical data are stored on a central server. Developers check out files from that central place. Examples: Subversion (SVN) and Perforce.
+In CVCS, all files and historical data are stored on a central server. Developers check out files from that central place. Examples: Subversion (SVN) and Perforce.
 
 Pros
  - Simplicity: 
@@ -30,7 +30,7 @@ Cons
    > Requires connection to the central server for most operations.
 
 **Distributed Version Control Systems (DVCS):**
-> In DVCS, each contributor has a complete copy of the entire repository, including its history, on their local machine. Examples: Git and Mercurial.
+In DVCS, each contributor has a complete copy of the entire repository, including its history, on their local machine. Examples: Git and Mercurial.
 
 Pros
  - Full Repository Backup:
