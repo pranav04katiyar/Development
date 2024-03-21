@@ -13,21 +13,21 @@ __Why VCS?__
 **Centralized Version Control Systems (CVCS):**
 > In CVCS, all files and historical data are stored on a central server. Developers check out files from that central place. Examples: Subversion (SVN) and Perforce.
 
-- Pros
+Pros
  - > Simplicity: Easier to understand for beginners.
  - > Centralized Control: Administrators have fine-grained control over the repository.
 
-- Cons
+Cons
  - > Single Point of Failure: If the central server goes down, no one can collaborate or save versioned changes.
  - > Limited Offline Capabilities: Requires connection to the central server for most operations.
 
 **Distributed Version Control Systems (DVCS):**
 > In DVCS, each contributor has a complete copy of the entire repository, including its history, on their local machine. Examples: Git and Mercurial.
 
-- Pros
+Pros
  - > Full Repository Backup: Every checkout is a full backup of the repository.
  - > Enhanced Collaboration: Enables more complex workflows and offline work.
 
-- Cons
+Cons
  - > Complexity: Can be more complex to understand and manage, especially for beginners.
  - > Larger Repository Size: As each clone is a full copy of the repository, it can take up more space.
