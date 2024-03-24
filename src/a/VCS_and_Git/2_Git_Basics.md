@@ -56,7 +56,7 @@ git add [file or directory]
   > To add all new and modified files, use ```git add .``` or ```git add -A```. This stages all changes in the current directory and its subdirectories.
 
 ### Git Commit
-When you run git commit, Git takes the changes that are in the staging area and saves them into the repository. When you make a commit, it is added to the end of the current latest commit.
+> When you run git commit, Git takes the changes that are in the staging area and saves them into the repository. When you make a commit, it is added to the end of the current latest commit.
 
 #### Syntax:
 ````
@@ -85,10 +85,10 @@ git commit -m "Your message here"
 - Immutability of a Git Commit
 
 #### Immutable Nature:
-Once a commit is created in Git, it becomes an immutable snapshot of the repository at a certain point in time. This means that the commit itself cannot be altered or changed without generating a new commit.
+> Once a commit is created in Git, it becomes an immutable snapshot of the repository at a certain point in time. This means that the commit itself cannot be altered or changed without generating a new commit.
 
 #### ***How Immutability is Achieved:***
-Each commit is identified by a unique SHA-1 hash, which is generated based on the content of the commit (including changes, author information, date, and commit message). Changing any aspect of the commit would result in a different hash, thus creating a new commit altogether.
+> Each commit is identified by a unique SHA-1 hash, which is generated based on the content of the commit (including changes, author information, date, and commit message). Changing any aspect of the commit would result in a different hash, thus creating a new commit altogether.
 
 #### ***Implications of Immutability***
 - Data Integrity:
@@ -111,20 +111,20 @@ Each commit is identified by a unique SHA-1 hash, which is generated based on th
   > A description provided by the author, explaining the changes made in the commit.
 
 ### Git Branching
-Multiple developers might be working on independent features at the same time. The primary purpose of branching is to diverge from the main line of development and continue to work independently without affecting the main line. Once the independent work is finished, you can converge the branches (merging back into the main branch). Branches serve as pointers to the latest commit. When you make a new commit, the branch pointer moves forward automatically. Creating a new branch in Git is a very quick and simple process as it is just creating a variable name.
+> Multiple developers might be working on independent features at the same time. The primary purpose of branching is to diverge from the main line of development and continue to work independently without affecting the main line. Once the independent work is finished, you can converge the branches (merging back into the main branch). Branches serve as pointers to the latest commit. When you make a new commit, the branch pointer moves forward automatically. Creating a new branch in Git is a very quick and simple process as it is just creating a variable name.
 
 - _**Creating a New Branch:**_ 
-  Use 
-  ```
-  git branch [branch-name]
-  ``` 
-  to create a new branch.
+  >Use 
+  >```
+  >git branch [branch-name]
+  >``` 
+  >to create a new branch.
 - _**Switching Branches:**_ 
-  Use 
-  ```
-  git checkout [branch-name] 
-  ```
-  to switch to an existing branch.
+  >Use 
+  >```
+  >git checkout [branch-name] 
+  >```
+  >to switch to an existing branch.
 - _**Create and switch to a New Branch:**_ 
   ```
   git checkout -b [branch-name]
@@ -148,29 +148,29 @@ Multiple developers might be working on independent features at the same time. T
 
 #### Advanced Branching Commands
 - _**Branch Deletion:**_ 
-  ```
-  git branch -d [branch-name]
-  ```
-  deletes a branch.
+  >```
+  >git branch -d [branch-name]
+  >```
+  >deletes a branch.
 - _**Renaming Branches:**_
-  ```
-  git branch -m [old-name] [new-name]
-  ```
-  renames a branch.
+  >```
+  >git branch -m [old-name] [new-name]
+  >```
+  >renames a branch.
 - _**Viewing Branches:**_
-  ```
-  git branch 
-  ```
-  lists all branches.
+  >```
+  >git branch 
+  >```
+  >lists all branches.
 
 ### Git Log: 
-```
-git log --graph
-```
-provides a visual representation of the branching and merging history.
+>```
+>git log --graph
+>```
+>provides a visual representation of the branching and merging history.
 
 ### Git Merge
-Merging in Git is a way to combine changes from different branches. It's like taking the work from one branch and adding it to another. For example, you might develop a new feature in a separate branch and then merge it into the main branch once it's ready.
+>Merging in Git is a way to combine changes from different branches. It's like taking the work from one branch and adding it to another. For example, you might develop a new feature in a separate branch and then merge it into the main branch once it's ready.
 
 _**How to Merge**_
 - Choose the Target Branch: 
@@ -187,34 +187,34 @@ _**How to Merge**_
   > to merge changes from [branch-name] into your current branch.
 
 _**Dealing with Merge Conflicts**_
-- Sometimes, Git can't automatically combine changes from different branches. This happens if the same part of a file was changed in both branches. This is called a conflict. 
-- Git will mark the conflicting areas in your files. You'll need to open these files and decide how to combine the changes. After editing, save the file.
-- Once you've resolved the conflicts, use
-  ```
-  git add [file-name]
-  ```
-  to mark them as resolved, then make a commit to complete the merge.
+> - Sometimes, Git can't automatically combine changes from different branches. This happens if the same part of a file was changed in both branches. This is called a conflict. 
+> - Git will mark the conflicting areas in your files. You'll need to open these files and decide how to combine the changes. After editing, save the file.
+> - Once you've resolved the conflicts, use
+>  ```
+>  git add [file-name]
+>  ```
+>  to mark them as resolved, then make a commit to complete the merge.
 
 _**Fast-Forward Merge and a Three-Way Merge**_
-- Imagine you're working on a project with a main branch, and you decide to work on a new feature. You create a new branch where you can make changes without affecting the main road.
+> - Imagine you're working on a project with a main branch, and you decide to work on a new feature. You create a new branch where you can make changes without affecting the main road.
 
 _**Fast-Forward Merge**_
-- A fast-forward merge in Git is like having a straight road from your feature branch back to the main road. This occurs when there have been no new changes on the main branch since you started your feature branch. If nothing new has been added there, git can simply move the end of the main branch up to the end of your feature branch. Your changes are now part of the main branch. There won’t be merge conflicts in this case.
+> - A fast-forward merge in Git is like having a straight road from your feature branch back to the main road. This occurs when there have been no new changes on the main branch since you started your feature branch. If nothing new has been added there, git can simply move the end of the main branch up to the end of your feature branch. Your changes are now part of the main branch. There won’t be merge conflicts in this case.
 
 _**Three-Way Merge**_
-- A three-way merge happens when there have been other changes on the main branch while you were working on your feature. 
-- In this case, your side branch doesn’t directly fit onto the end of the main branch anymore. To merge your changes with the main branch, Git uses a special process. 
-- It looks at three points: 
-  - the end of your feature branch
-  - the end of the main branch, and 
-  - where both branches were last the same. 
-- Git then figures out how to combine these changes. 
-- In this case, there can be merge conflicts that you will have to resolve.
+> - A three-way merge happens when there have been other changes on the main branch while you were working on your feature. 
+>- In this case, your side branch doesn’t directly fit onto the end of the main branch anymore. To merge your changes with the main branch, Git uses a special process. 
+>- It looks at three points: 
+>  - the end of your feature branch
+>  - the end of the main branch, and 
+>  - where both branches were last the same. 
+>- Git then figures out how to combine these changes. 
+>- In this case, there can be merge conflicts that you will have to resolve.
 
 _**Squash Merge**_
-- Squash merging is a way to combine all the changes from a feature branch into a single commit when you merge it into another branch.
-- It's useful for keeping your history clean and organized. 
-- Instead of having many small commits from a feature branch, you have one concise commit.
+>- Squash merging is a way to combine all the changes from a feature branch into a single commit when you merge it into another branch.
+>- It's useful for keeping your history clean and organized. 
+>- Instead of having many small commits from a feature branch, you have one concise commit.
 
 _Syntax:_ 
 > Use 
@@ -232,7 +232,7 @@ _Syntax:_
   > Always test your code to make sure it works correctly before and after merging.
 
 ### Git Rebase
-In Git, rebase is a command that helps to move or combine a sequence of commits to a new base commit. It's a way to rearrange the history of your commits for a cleaner, more linear progression.
+>In Git, rebase is a command that helps to move or combine a sequence of commits to a new base commit. It's a way to rearrange the history of your commits for a cleaner, more linear progression.
 
 #### Why Rebase
 - Clean History: 
