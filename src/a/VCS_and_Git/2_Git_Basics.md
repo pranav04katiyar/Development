@@ -205,9 +205,9 @@ _**Three-Way Merge**_
 > - A three-way merge happens when there have been other changes on the main branch while you were working on your feature. 
 >- In this case, your side branch doesn’t directly fit onto the end of the main branch anymore. To merge your changes with the main branch, Git uses a special process. 
 >- It looks at three points: 
->  - the end of your feature branch
->  - the end of the main branch, and 
->  - where both branches were last the same. 
+>    (i)  the end of your feature branch
+>    (ii) the end of the main branch, and 
+>    (iii) where both branches were last the same. 
 >- Git then figures out how to combine these changes. 
 >- In this case, there can be merge conflicts that you will have to resolve.
 
