@@ -22,8 +22,8 @@ In Git, HEAD is a reference to the current or last commit in the currently check
 > This creates a local copy of the repository on your computer, including all files and history.
 
 #### _Linking a Local Repository to a Remote_
-- Initialize Local Repository: 
-    >If you already have a local repository, initialize it with:
+Initialize Local Repository: 
+  > If you already have a local repository, initialize it with:
     ```
     git remote add <remote-name> <remote-repository-URL>
     ```
