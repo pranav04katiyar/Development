@@ -5,8 +5,7 @@ Git is a version control system that allows you to track changes to files and fo
 This guide is a quick reference to the most common Git commands. It’s not meant to be a comprehensive guide to Git, but rather a quick reference to the most common commands.
 
 Here’s the revised git cheatsheet with improved section titles and reorganized:
-
-## Setup and Configuration:
+## 1. Setup and Configuration:
 ###### Initialize a new Git repository
 >```
 >git init 
@@ -28,7 +27,7 @@ Here’s the revised git cheatsheet with improved section titles and reorganized
 >git config --list
 >```
 
-## File Operations:
+## 2. File Operations:
 ###### Show working tree status
 >```
 >git status
@@ -54,7 +53,7 @@ Here’s the revised git cheatsheet with improved section titles and reorganized
 >git diff
 >```
 
-## Branching and Merging:
+## 3. Branching and Merging:
 ###### List all branches
 >```
 >git branch
@@ -108,7 +107,7 @@ Here’s the revised git cheatsheet with improved section titles and reorganized
 >git rebase -i <remote_name>/<remote_branch>
 >```
 
-## Remote Repositories:
+## 4. Remote Repositories:
 ###### List remote repositories
 >```
 >git remote
@@ -178,7 +177,29 @@ Here’s the revised git cheatsheet with improved section titles and reorganized
 >git fetch -p
 >```
 
-## Commit History:
+## 5. Commit Management:
+###### Modify the latest commit
+>```
+>git commit --amend
+>```
+###### Create a new commit that undoes changes from a previous commit
+>```
+>git revert <commit_id>
+>```
+###### Discard changes and move HEAD to a specific commit
+>```
+>git reset --hard <commit_id>
+>```
+###### Move HEAD to a specific commit, but preserve staged changes
+>```
+>git reset --soft <commit_id>
+>```
+###### Show a record of all changes made to the local repository head
+>```
+>git reflog
+>```
+
+## 6. Commit History:
 ###### Show commit history
 >```
 >git log
@@ -204,29 +225,7 @@ Here’s the revised git cheatsheet with improved section titles and reorganized
 >git log --until=<date>
 >```
 
-## Commit Management:
-###### Modify the latest commit
->```
->git commit --amend
->```
-###### Create a new commit that undoes changes from a previous commit
->```
->git revert <commit_id>
->```
-###### Discard changes and move HEAD to a specific commit
->```
->git reset --hard <commit_id>
->```
-###### Move HEAD to a specific commit, but preserve staged changes
->```
->git reset --soft <commit_id>
->```
-###### Show a record of all changes made to the local repository head
->```
->git reflog
->```
-
-## Tagging:
+## 7. Tagging:
 ###### List all tags
 >```
 >git tag
@@ -252,7 +251,7 @@ Here’s the revised git cheatsheet with improved section titles and reorganized
 >git show <tag_name>
 >```
 
-## Cherry-Picking:
+## 8. Cherry-Picking:
 ###### Apply changes from a specific commit to the current branch
 >```
 >git cherry-pick <commit_id>
