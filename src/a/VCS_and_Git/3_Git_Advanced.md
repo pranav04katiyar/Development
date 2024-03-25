@@ -47,8 +47,13 @@ git pull origin master
 
 > Git attempts to automatically merge changes. If there's a conflict, you'll need to resolve it manually.
 
-> Internally, git pull starts with git fetch. This command retrieves commits, files, and refs from a remote repository into your local repo.Following the fetch, git pull executes git merge to merge the retrieved branch heads into the current local branch. 
-> As it executes git merge, pull can create a new merge commit as well. Optionally, git pull can rebase instead of merging. This is done using git pull --rebase  This is often a recommended approach.
+ 
+> Internally, git pull starts with git fetch. This command retrieves commits, files, and refs from a remote repository into your local repo.Following the fetch, git pull executes git merge to merge the retrieved branch heads into the current local branch. As it executes git merge, pull can create a new merge commit as well. Optionally, git pull can rebase instead of merging.
+> This is done using 
+> ```
+> git pull --rebase  
+> ```
+> This is often a recommended approach.
 
 #### Push Command
 > Push your changes to the remote repository:
