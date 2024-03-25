@@ -71,33 +71,94 @@ git push origin --delete <branch-name>
 
 ### Working on Github
 #### Forking Repository
-Forking is creating your own copy of a repository. This allows you to freely experiment with changes without affecting the original project. On the GitHub page of the repository, click the "Fork" button. This creates a copy under your GitHub account. Now clone this repository into your local. Use the command git clone [URL of your fork]. This URL is found on your fork's GitHub page.
-Syncing with Original Repository
-To ensure you have the latest changes from the original repository, add the original repository as a remote source: git remote add upstream [URL of original repository]. Whenever you want to fetch the changes, use the command: git fetch upstream and then merge the changes into your local branch: git merge upstream/main.
-Creating a New Branch
-It's a best practice to create a new branch for your changes. This keeps your contributions organized and separated from the main project. Use git checkout -b [new-branch-name] to create a new branch. Make your intended changes in the code.
-Pushing Changes to GitHub
-Use git push origin [your-branch-name] to push your changes to your fork on GitHub.
-Creating a Pull Request (PR)
-A PR is a way to propose your changes to the original repository. On your fork's GitHub page, select your branch and click "New pull request". Add details about your changes and submit the PR.
-Making Further Changes
-Maintainers might ask for changes. Make these changes in your local branch. After committing these changes, push them to GitHub. The PR will automatically update. Ensure you keep rebasing your repository to upstream.
-Final Merging
-Once your PR is approved, the maintainers of the original repository will merge your changes. Congratulations, your contributions are now part of the project!
-Git Cherry-Pick
-Git cherry-pick is a powerful tool that allows you to select and apply individual commits from one branch into another. Unlike merging or rebasing, which typically apply a series of commits, cherry-picking applies only the commits you specify.
+>Forking is creating your own copy of a repository. This allows you to freely experiment with changes without affecting the original project. 
+> - On the GitHub page of the repository, click the "Fork" button.
+> - This creates a copy under your GitHub account.
+> - Now clone this repository into your local. 
+> - Use the command 
+>```
+>git clone [URL of your fork]
+>```
+>This URL is found on your fork's GitHub page.
+#### Syncing with Original Repository
+>To ensure you have the latest changes from the original repository, add the original repository as a remote source: 
+>```
+>git remote add upstream [URL of original repository]
+>```
+>Whenever you want to fetch the changes, use the command: 
+> ```
+> git fetch upstream 
+> ```
+> and then merge the changes into your local branch: 
+>```
+>git merge upstream/main
+>```
+#### Creating a New Branch
+>It's a best practice to create a new branch for your changes. This keeps your contributions organized and separated from the main project. 
+> Use
+> ```
+> git checkout -b [new-branch-name]
+> ```
+> to create a new branch. Make your intended changes in the code.
+#### Pushing Changes to GitHub
+>Use
+```
+git push origin [your-branch-name]
+```
+> to push your changes to your fork on GitHub.
+#### Creating a Pull Request (PR)
+>A PR is a way to propose your changes to the original repository. On your fork's GitHub page, select your branch and click "New pull request". Add details about your changes and submit the PR.
+#### Making Further Changes
+> Maintainers might ask for changes. Make these changes in your local branch. After committing these changes, push them to GitHub. The PR will automatically update. Ensure you keep rebasing your repository to upstream.
+#### Final Merging
+>Once your PR is approved, the maintainers of the original repository will merge your changes. Congratulations, your contributions are now part of the project!
 
-When to Use Cherry-Pick?
-Selective Changes: When you want to apply specific changes from one branch to another without bringing in the entire branch history.
-Bug Fixes and Feature Backporting: For applying bug fixes or features from the main branch to a release or maintenance branch.
+### Git Cherry-Pick
+>Git cherry-pick is a powerful tool that allows you to select and apply individual commits from one branch into another. Unlike merging or rebasing, which typically apply a series of commits, cherry-picking applies only the commits you specify.
 
-How to Cherry-Pick?
-Identify the Commit Hash: First, you need the hash of the commit you want to cherry-pick.
-Switch to the Target Branch: Use git checkout [target-branch] to switch to the branch where you want to apply the commit.
-Cherry-Pick the Commit: Use git cherry-pick [commit-hash]. If the commit applies cleanly, it will be added to your branch. If there’s a conflict, Git will pause the cherry-pick operation. Manually resolve the conflicts in your code editor. After resolving, add the files with git add [file-name]. Complete the cherry-pick with git cherry-pick --continue.
-Push the Changes: Use git push origin [target-branch] to push the changes to the remote repository.
+#### When to Use Cherry-Pick?
+1. Selective Changes:
+  > When you want to apply specific changes from one branch to another without bringing in the entire branch history.
+2. Bug Fixes and Feature Backporting: 
+  > For applying bug fixes or features from the main branch to a release or maintenance branch.
 
-Best Practices and Tips
-Commit Isolation: Cherry-pick works best with commits that are isolated in their changes (i.e., the commit doesn’t contain a mix of unrelated changes).
-Testing: Always test your changes after a cherry-pick to ensure functionality hasn’t been compromised.
-Avoid Cherry-Picking Over Regular Merges: Cherry-pick is a useful tool, but it's not a substitute for regular merging or rebasing. 
+#### How to Cherry-Pick?
+1. Identify the Commit Hash:
+   > First, you need the hash of the commit you want to cherry-pick.
+2. Switch to the Target Branch:
+   > Use 
+   > ```
+   > git checkout [target-branch]
+   > ```
+   > to switch to the branch where you want to apply the commit.
+3. Cherry-Pick the Commit:
+   > - Use 
+   > ```
+   > git cherry-pick [commit-hash]
+   > ```
+   > If the commit applies cleanly, it will be added to your branch. 
+
+   > - If there’s a conflict, Git will pause the cherry-pick operation. Manually resolve the conflicts in your code editor.
+   > After resolving, add the files with
+   > ```
+   > git add [file-name]
+   > ```
+
+   > - Complete the cherry-pick with 
+   > ```
+   > git cherry-pick --continue
+   > ```
+4. Push the Changes: 
+   > Use 
+   > ```
+   > git push origin [target-branch]
+   > ```
+   > to push the changes to the remote repository.
+
+#### Best Practices and Tips
+1. Commit Isolation: 
+   > Cherry-pick works best with commits that are isolated in their changes (i.e., the commit doesn’t contain a mix of unrelated changes).
+2. Testing: 
+   > Always test your changes after a cherry-pick to ensure functionality hasn’t been compromised.
+3. Avoid Cherry-Picking Over Regular Merges: 
+   > Cherry-pick is a useful tool, but it's not a substitute for regular merging or rebasing. 
