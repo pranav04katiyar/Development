@@ -6,8 +6,7 @@ This guide is a quick reference to the most common Git commands. It’s not mean
 
 Here’s the revised git cheatsheet with improved section titles and reorganized:
 
-## Useful Common Commands
-### Setup and Configuration:
+## Setup and Configuration:
 ###### Initialize a new Git repository
 >```
 >git init 
@@ -29,7 +28,7 @@ Here’s the revised git cheatsheet with improved section titles and reorganized
 >git config --list
 >```
 
-### File Operations:
+## File Operations:
 ###### Show working tree status
 >```
 >git status
@@ -55,7 +54,7 @@ Here’s the revised git cheatsheet with improved section titles and reorganized
 >git diff
 >```
 
-### Branching and Merging:
+## Branching and Merging:
 ###### List all branches
 >```
 >git branch
@@ -109,7 +108,7 @@ Here’s the revised git cheatsheet with improved section titles and reorganized
 >git rebase -i <remote_name>/<remote_branch>
 >```
 
-### Remote Repositories:
+## Remote Repositories:
 ###### List remote repositories
 >```
 >git remote
@@ -179,7 +178,7 @@ Here’s the revised git cheatsheet with improved section titles and reorganized
 >git fetch -p
 >```
 
-### Commit History:
+## Commit History:
 ###### Show commit history
 >```
 >git log
@@ -205,7 +204,7 @@ Here’s the revised git cheatsheet with improved section titles and reorganized
 >git log --until=<date>
 >```
 
-### Commit Management:
+## Commit Management:
 ###### Modify the latest commit
 >```
 >git commit --amend
@@ -227,7 +226,7 @@ Here’s the revised git cheatsheet with improved section titles and reorganized
 >git reflog
 >```
 
-### Tagging:
+## Tagging:
 ###### List all tags
 >```
 >git tag
@@ -253,7 +252,7 @@ Here’s the revised git cheatsheet with improved section titles and reorganized
 >git show <tag_name>
 >```
 
-### Cherry-Picking:
+## Cherry-Picking:
 ###### Apply changes from a specific commit to the current branch
 >```
 >git cherry-pick <commit_id>
