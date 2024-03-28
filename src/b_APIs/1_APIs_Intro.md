@@ -5,8 +5,8 @@ API stands for Application Programming Interface.
 2. Interface can be thought of as a contract of service between two applications.
 
 ## What is an API?
-- APIs are mechanisms that enable two software components to communicate with each other using a set of definitions and protocols.
-- These are defined contracts/set of rules/methods which allow one application to interact with another, by exposing the functionalities.
+APIs are mechanisms that enable two software components to communicate with each other using a set of definitions and protocols.
+These are defined contracts/set of rules/methods which allow one application to interact with another, by exposing the functionalities.
 > - They define all the details for communication between different components and how a particular method/endpoint should respond when they are called.
 > - API calls are transfer of state(Data) of different objects between different applications.
 >  - For example:
