@@ -15,10 +15,10 @@ REST is an architectural style for building distributed systems based on hyperme
       https://adventure-works.com/orders/1
       ```
     - Clients interact with a service by exchanging representations of resources. Many web APIs use JSON as the exchange format.
-      > For example, a GET request to the URI listed above might return this response body:
-      > ```
-      > {"orderId":1,"orderValue":99.90,"productId":1,"quantity":1}
-      > ```
+     > For example, a GET request to the URI listed above might return this response body:
+     > ```
+     > {"orderId":1,"orderValue":99.90,"productId":1,"quantity":1}
+     > ```
 
     - REST APIs use a uniform interface, which helps to decouple the client and service implementations. 
     >  - For REST APIs built on HTTP, the uniform interface includes using standard HTTP verbs to perform operations on resources. 
