@@ -22,12 +22,14 @@ REST is an architectural style for building distributed systems based on hyperme
 
     - REST APIs use a uniform interface, which helps to decouple the client and service implementations. 
     >  - For REST APIs built on HTTP, the uniform interface includes using standard HTTP verbs to perform operations on resources. 
+    > 
     >  - ***The most common operations are GET, POST, PUT, PATCH, and DELETE.***
     >    - GET retrieves a representation of the resource at the specified URI. The body of the response message contains the details of the requested resource.
     >    - POST creates a new resource at the specified URI. The body of the request message provides the details of the new resource. Note that POST can also be used to trigger operations that don't actually create resources.
     >    - PUT either creates or replaces the resource at the specified URI. The body of the request message specifies the resource to be created or updated.
     >    - PATCH performs a partial update of a resource. The request body specifies the set of changes to apply to the resource.
     >    - DELETE removes the resource at the specified URI.
+    > 
     >  - ***The differences between POST, PUT, and PATCH can be confusing:***
     >    - A POST request creates a resource. The server assigns a URI for the new resource, and returns that URI to the client. 
     >       - In the REST model, you frequently apply POST requests to collections. 
