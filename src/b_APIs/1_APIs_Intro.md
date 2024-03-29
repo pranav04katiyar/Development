@@ -22,6 +22,11 @@ These are defined contracts/set of rules/methods which allow one application to 
     > - REST stands for **Representational State Transfer**. 
     > - It is an architectural style for designing networked applications. 
     > - REST APIs are a standardized architecture for building APIs that uses HTTP methods to perform operations.
+    > - REST defines a set of functions like GET, PUT, DELETE, etc. that clients can use to access server data.
+    > - The main feature of REST API is statelessness.
+    >   - Statelessness means that servers do not save client data between requests
+    >   - Client requests to the server are similar to URLs you type in your browser to visit a website. 
+    >   - The response from the server is plain data, without the typical graphical rendering of a web page.
     > - These are the most popular and flexible APIs found on the web today.
 2. **SOAP APIs**:
     > - SOAP stands for **Simple Object Access Protocol**.
@@ -40,3 +45,45 @@ These are defined contracts/set of rules/methods which allow one application to 
 5. **GraphQL APIs**: 
     > - GraphQL is a query language for APIs and a runtime for executing those queries by using a type system you define for your data. 
     > - It was developed by Facebook in 2012 and released as an open-source project in 2015.
+
+## Whats a web API?
+- A Web API or Web Service API is an application processing interface between a web server and web browser.
+> - All web services are APIs but not all APIs are web services. 
+> - REST API is a special type of Web API that uses the standard architectural style explained above.
+
+> The different terms around APIs, like Java API or service APIs, exist because historically, APIs were created before the world wide web.
+> Modern web APIs are REST APIs and the terms can be used interchangeably.
+ 
+## What are API Integrations?
+API integrations are software components that automatically update data between clients and servers. 
+> - Some examples of API integrations are 
+>  - when automatic data sync to the cloud from your phone image gallery, or 
+>  - the time and date automatically sync on your laptop when you travel to another time zone.
+
+## Types of APIs
+1. **Open APIs**: 
+    - Open APIs are publicly available for developers to use. They are also known as external APIs.
+    > - They are used to enable third-party developers to access the functionality of a system.
+    > - For example, Google Maps API, Twitter API, etc.
+2. **Internal APIs**: 
+    - Internal APIs are used within a company to improve its own products and services. They are also known as private APIs.
+    > - They are used to improve the internal efficiency of a company.
+    > - For example, Amazon’s internal APIs for its website.
+3. **Partner APIs**: 
+    - Partner APIs are used to provide access to a company’s business partners.
+    > - They are used to improve the services provided to the company’s partners.
+    > - For example, Salesforce’s partner APIs.
+4. **Composite APIs**: 
+    - Composite APIs are APIs that combine multiple data and service APIs.
+    > - They are used to provide a single point of access to information.
+    > - For example, a weather API that combines data from multiple weather sources.
+
+## What are API Endpoints?
+- API endpoints are the final touchpoints in the API communication system. 
+- These include server URLs, services, and other specific digital locations from where information is sent and received between systems. 
+
+## Why are API Endpoints important?
+- API endpoints are critical to enterprises for two main reasons:
+> 1. Security: API endpoints make the system vulnerable to attack. API monitoring is crucial for preventing misuse.
+> 2. Performance: API endpoints, especially high traffic ones, can cause bottlenecks and affect system performance.
+ 
