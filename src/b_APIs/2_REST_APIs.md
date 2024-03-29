@@ -47,5 +47,5 @@ REST is an architectural style for building distributed systems based on hyperme
     >       - Technically PATCH can also create a new resource (by specifying a set of updates to a "null" resource), if the server supports this.
     >    
     >   > - PUT requests must be idempotent. 
-    >   > - If a client submits the same PUT request multiple times, the results should always be the same (the same resource will be modified with the same values).
-    >   > - POST and PATCH requests are not guaranteed to be idempotent.
+    >   >   - If a client submits the same PUT request multiple times, the results should always be the same (the same resource will be modified with the same values).
+    >   >   - POST and PATCH requests are not guaranteed to be idempotent.
