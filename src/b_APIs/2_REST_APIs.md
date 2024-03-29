@@ -29,7 +29,7 @@ REST is an architectural style for building distributed systems based on hyperme
     >    - PATCH performs a partial update of a resource. The request body specifies the set of changes to apply to the resource.
     >    - DELETE removes the resource at the specified URI.
 
-      - The differences between POST, PUT, and PATCH can be confusing:
+       - The differences between POST, PUT, and PATCH can be confusing:
     >   - A POST request creates a resource. The server assigns a URI for the new resource, and returns that URI to the client. 
     >      - In the REST model, you frequently apply POST requests to collections. 
     >      - The new resource is added to the collection. 
