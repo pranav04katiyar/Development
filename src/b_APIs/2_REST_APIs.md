@@ -11,9 +11,9 @@ REST is an architectural style for building distributed systems based on hyperme
 - _Here are some of the main design principles of RESTful APIs using HTTP:_
     - REST APIs are designed around resources, which are any kind of object, data, or service that can be accessed by the client.
     - A resource has an identifier, which is a URI that uniquely identifies that resource. For example, the URI for a particular customer order might be:
-    > ```
-    > https://adventure-works.com/orders/1
-    > ```
+      ```
+      https://adventure-works.com/orders/1
+      ```
     - Clients interact with a service by exchanging representations of resources. Many web APIs use JSON as the exchange format.
     > For example, a GET request to the URI listed above might return this response body:
     > ```
