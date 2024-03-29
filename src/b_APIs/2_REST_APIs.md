@@ -8,7 +8,7 @@ REST is an architectural style for building distributed systems based on hyperme
   - A primary advantage of REST over HTTP is that it uses open standards, and does not bind the implementation of the API or the client applications to any specific implementation. 
     > For example, a REST web service could be written in ASP.NET, and client applications can use any language or toolset that can generate HTTP requests and parse HTTP responses.
     
-- Here are some of the main design principles of RESTful APIs using HTTP:
+- ___Here are some of the main design principles of RESTful APIs using HTTP:___
     - REST APIs are designed around resources, which are any kind of object, data, or service that can be accessed by the client.
     - A resource has an identifier, which is a URI that uniquely identifies that resource. For example, the URI for a particular customer order might be:
     > ```
