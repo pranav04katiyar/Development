@@ -13,6 +13,17 @@ These are defined contracts/set of rules/methods which allow one application to 
 >    - The weather bureau’s software system contains daily weather data & the weather app on your phone “talks” to this system via APIs to shows you daily weather updates on your phone.
 >    - when you use a mobile application to book a cab, the application sends your location to the server, which then sends the cab to your location.
 
+> Most modern web applications expose APIs that clients can use to interact with the application. A well-designed web API should aim to support:
+>   - Platform independence: 
+>     - Any client should be able to call the API, regardless of how the API is implemented internally.
+>     - This requires using standard protocols, and having a mechanism whereby the client and the web service can agree on the format of the data to exchange.
+>   - Service evolution:
+>     - The web API should be able to evolve and add functionality independently from client applications.
+>     - As the API evolves, existing client applications should continue to function without modification. 
+>     - All functionality should be discoverable so that client applications can fully use it.
+
+> This guidance describes issues that you should consider when designing a web API.
+
 ## How does an API work?
 - APIs work by sending requests to a server and receiving responses back.
 - The application sending the request is called the ***client***, and the application sending the response is called the ***server***.
