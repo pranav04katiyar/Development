@@ -45,3 +45,7 @@ REST is an architectural style for building distributed systems based on hyperme
     >       - The request body specifies a set of changes to apply to the resource.
     >       - This can be more efficient than using PUT, because the client only sends the changes, not the entire representation of the resource. 
     >       - Technically PATCH can also create a new resource (by specifying a set of updates to a "null" resource), if the server supports this.
+    >    
+    >    - PUT requests must be idempotent. 
+    >      - If a client submits the same PUT request multiple times, the results should always be the same (the same resource will be modified with the same values).
+    >      - POST and PATCH requests are not guaranteed to be idempotent.
