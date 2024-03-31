@@ -13,7 +13,7 @@ Spring has a core framework that provides essential core set of functionalities 
         - Setter/Method Injection
     - Spring provides a very easy way to inject the dependencies using annotations.
 
-   #### Difference between Dependency Injection and Dependency Inversion:
+   #### Dependency Injection vs Dependency Inversion:
      - Dependency Injection is a design pattern that is used to remove the hard-coded dependencies and make the application loosely coupled and easy to maintain.
        - Dependency Injection says that whenever a class is dependent on another class, where will that dependency be created?
        - The class should not create the dependency itself. Rather, the dependency should be injected from outside, so that the class is not tightly coupled.
