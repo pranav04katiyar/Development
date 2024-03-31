@@ -39,3 +39,13 @@ Spring has a core framework that provides essential core set of functionalities 
     - When we start a Spring application, Spring creates objects of all beans and puts them in the Spring container.
 
 **To summarize, Spring is a lightweight framework that works on the principle of Dependency Injection, which allows us to create beans that are automatically created as well as injected into other objects.**
+
+## Spring Boot:
+- Spring Boot is a Spring project that simplifies the Spring configuration and setup other projects.
+- Spring Boot is a project that is built on top of the Spring Framework. It provides a simpler and faster way to set up, configure, and run both simple and web-based applications.
+- It eliminates the need to write any configuration files, annotations, or boilerplate code.
+- It also automatically configures a project with all the known best practices and a set of defaults.
+
+Any good framework should have the following features:
+1. **An Opinionated Default Configuration:** It should have a set of best-practices/defaults that are known to work well together.
+2. **Modifiable Defaults:** It should allow you to modify the defaults as per your requirements as easily as possible.
