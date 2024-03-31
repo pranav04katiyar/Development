@@ -15,11 +15,11 @@ Spring has a core framework that provides essential core set of functionalities 
 
    #### Dependency Injection vs Dependency Inversion:
      - Dependency Injection is a design pattern that is used to remove the hard-coded dependencies and make the application loosely coupled and easy to maintain.
-       - Dependency Injection says that whenever a class is dependent on another class, where will that dependency be created?
-       - The class should not create the dependency itself. Rather, the dependency should be injected from outside, so that the class is not tightly coupled.
+       > - Dependency Injection says that whenever a class is dependent on another class, where will that dependency be created?
+       > - The class should not create the dependency itself. Rather, the dependency should be injected from outside, so that the class is not tightly coupled.
      - Dependency Inversion is a principle that says that the high-level modules should not depend on low-level modules, but they should depend on abstractions. And the abstractions should not depend on details, but the details should depend on abstractions.
-       - One class should not depend on another class, but on an interface.
-       - The details of the class should depend on the interface, not the other way around.
+       > - One class should not depend on another class, but on an interface.
+       > - The details of the class should depend on the interface, not the other way around.
      - None of the two are a way to implement the other. They are two different concepts, talking about similar things.
   
    - To conclude:
