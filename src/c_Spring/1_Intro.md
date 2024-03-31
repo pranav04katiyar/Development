@@ -1,45 +1,33 @@
-Spring is a framework that is used to develop Java applications. It is an open-source framework that is used to develop enterprise applications. It was developed by Rod Johnson in 2003. It is a lightweight framework that is used to develop loosely coupled.
+Spring is an open-source lightweight framework that is used to develop loosely-coupled enterprise level Java applications.
 
-- Spring Core
-- Spring MVC
-- Spring Boot
-- Spring JDBC
+Spring has a core framework that provides essential core set of functionalities + additional modules that provide additional functionality based on the application requirements.(Web, Data, Cloud, Authentication, etc.)
 
-### Spring Core
-Spring Core is the core container of the Spring framework. It provides the basic functionalities of the Spring framework. It provides the following functionalities:
+Spring Core Framework:
+1. Dependency Injection:
+    - Spring injects the dependencies of an object at runtime. 
+    - This is done by defining the dependencies in a configuration file, making the application loosely coupled and easy to maintain. So, testing and future modifications are easy.
+    - It is better to add dependencies outside the class rather than inside the class, so that the class is not tightly coupled and the dependencies can be reused, modified, or replaced easily, making them loosely coupled. 
+    - Spring provides 2 types of DI:
+        - Constructor Injection
+        - Setter/Method Injection
+    - Spring provides a very easy way to inject the dependencies using annotations.
 
-#### Inversion of Control (IoC)
-Inversion of Control is a design principle that is used to develop loosely coupled applications. It is used to remove the dependency of one class on another class. It is used to develop loosely coupled applications.
+   - Difference between Dependency Injection and Dependency Inversion:
+     - Dependency Injection is a design pattern that is used to remove the hard-coded dependencies and make the application loosely coupled and easy to maintain.
+       - Dependency Injection says that whenever a class is dependent on another class, where will that dependency be created?
+       - The class should not create the dependency itself. Rather, the dependency should be injected from outside, so that the class is not tightly coupled.
+     - Dependency Inversion is a principle that says that the high-level modules should not depend on low-level modules, but they should depend on abstractions. And the abstractions should not depend on details, but the details should depend on abstractions.
+       - One class should not depend on another class, but on an interface.
+       - The details of the class should depend on the interface, not the other way around.
+     - None of the two are a way to implement the other. They are two different concepts, talking about similar things.
+  
+   - To conclude:
+     - Dependency Inversion is a design principle that says "Instead of 2 concrete classes directly dependent on each other, they should depend on each other via an interface."
+     - Dependency Injection says "Instead of creating an object of the dependency inside the class, we pass/inject the object of that dependency from outside the class via a constructor or a setter method."
 
-#### Dependency Injection (DI)
-Dependency Injection is a design pattern that is used to inject the dependency of one class into another class. It is used to develop loosely coupled applications.
-
-### Spring MVC
-Spring MVC is a web framework that is used to develop web applications. It is built on top of the Spring Core container. It provides the following functionalities:
-
-#### Model
-Model is used to represent the data of the application. It is used to store the data of the application.
-
-#### View
-View is used to represent the user interface of the application. It is used to display the data of the application.
-
-#### Controller
-Controller is used to handle the user requests and send the response back to the user. It is used to control the flow of the application.
-
-### Spring Boot
-Spring Boot is a framework that is used to develop standalone applications. It is built on top of the Spring Core container. It provides the following functionalities:
-
-#### Auto Configuration
-Auto Configuration is used to automatically configure the application based on the dependencies of the application.
-
-#### Embedded Server
-Embedded Server is used to run the application without deploying it on the server.
-
-### Spring JDBC
-Spring JDBC is a framework that is used to develop database applications. It is built on top of the Spring Core container. It provides the following functionalities:
-
-#### JdbcTemplate
-JdbcTemplate is used to execute the SQL queries and retrieve the data from the database.
-
-#### DataSource
-DataSource is used to establish a connection with the database and execute the SQL queries.
+2. Inversion of Control:
+    - Whenever a framework does DI for us, it is called Inversion of Control. 
+    - In traditional programming, the objects are created by the programmer.
+    - In Spring, the objects are created by the Spring container.
+    - The objects are injected with their dependencies by the Spring container.
+    - This is called Inversion of Control.
