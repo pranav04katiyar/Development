@@ -27,8 +27,15 @@ Spring has a core framework that provides essential core set of functionalities 
      - Dependency Injection says "Instead of creating an object of the dependency inside the class, we pass/inject the object of that dependency from outside the class via a constructor or a setter method."
 
 2. ### Inversion of Control:
-    - Whenever a framework does DI for us, it is called Inversion of Control. 
-    - In traditional programming, the objects are created by the programmer.
-    - In Spring, the objects are created by the Spring container.
-    - The objects are injected with their dependencies by the Spring container.
-    - This is called Inversion of Control.
+    - Whenever we create an application, there are multiple common dependencies which have to be injected in multiple classes.
+    - In traditional programming, these are created by the programmer.
+    - Whenever a framework does DI for us, it is called Inversion of Control.
+    - Spring provides a very easy way to inject the dependencies using beans.
+    
+    #### Spring Bean:
+    - A bean is an object that Spring will automatically create as well as inject the dependencies for you whenever and wherever needed and manage the lifecycle of the object. 
+    - A Spring Bean is an object that is instantiated, assembled, and managed by the Spring IoC container.
+    - Think of a bean as a special object that you give to Spring, so that it can inject the dependencies for you automatically whenever needed and manage the lifecycle of the object.
+    - When we start a Spring application, Spring creates objects of all beans and puts them in the Spring container.
+
+**To summarize, Spring is a lightweight framework that works on the principle of Dependency Injection, which allows us to create beans that are automatically created as well as injected into other objects.**
