@@ -38,7 +38,7 @@ Spring has a core framework that provides essential core set of functionalities 
     - Think of a bean as a special object that you give to Spring, so that it can inject the dependencies for you automatically whenever needed and manage the lifecycle of the object.
     - When we start a Spring application, Spring creates objects of all beans and puts them in the Spring container.
 
-> ### To summarize, Spring is a lightweight framework that works on the principle of Dependency Injection, which allows us to create beans that are automatically created as well as injected into other objects.**
+> ### To summarize, Spring is a lightweight framework that works on the principle of Dependency Injection, which allows us to create beans that are automatically created as well as injected into other objects.
 
 ## Spring Boot:
 - Spring Boot is a Spring project that simplifies the Spring configuration and setup other projects.
