@@ -35,3 +35,12 @@
 Spring MVC is a part of the Spring Framework that is used to build web applications. It is based on the Model-View-Controller design pattern. It is a robust, flexible, and highly configurable framework that is used to develop web applications.
 
 ### Journey of a request in Spring Boot
+1. **User sends a request:** The user sends a request to the server.
+2. **Dispatcher Servlet receives the request:** The Dispatcher Servlet receives the request.
+   - The Dispatcher Servlet is the front controller of the Spring MVC.
+   - It receives all the requests and then dispatches them to the appropriate controller.
+3. **Dispatcher Servlet asks HandlerMapping for the correct method to serve the API:** The Dispatcher Servlet asks the HandlerMapping to map the request to the correct method in the Controller.
+   - HandlerMapping will map the request to the correct method in the Controller:** The HandlerMapping maps the request to the correct method in the Controller and returns the method to the Dispatcher Servlet.
+4. **Dispatcher Servlet calls the mapped Controller:** The Dispatcher Servlet calls the Controller based on the method returned by the HandlerMapping.
+5. **Controller processes the request:** The Controller processes the request, work on the request parameters using the appropriate Service Layer, Repository Layer, and Model and returns the response to the Dispatcher Servlet.
+6. **Dispatcher Servlet sends the response to the user:** The Dispatcher Servlet sends the response to the user.
