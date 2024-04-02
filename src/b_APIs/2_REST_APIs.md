@@ -61,6 +61,22 @@ REST stands for **Representational State Transfer**.
     - **CONNECT Method:**
         > The CONNECT method establishes a tunnel to the server identified by the target resource.
       
+###### Note:
+- All these methods are just nomenclature and can be used for any purpose.
+- The server can interpret these methods in any way it wants.
+  > - For example, a server can use the POST method to return a resource, or use the GET method to delete a resource.
+  > - It all depends on how the server code is implemented.
+  > - For example,
+  > - ```
+  >   @DeleteMapping(/products/{id})
+  >   public void deleteProduct(@PathVariable("id") int id) {
+  >       // create a new product with the given id
+  >   }
+  >   ```
+  >   - In this example, the DELETE method is used to create a new product with the given id.
+  >   - The DELETE method (@DeleteMapping) will call the deleteProduct method based on the id provided in the URL(/products/{id}) and create a new product with the given id.
+  > - This is not a good practice, but it is possible.
+
 #### Differences between POST, PUT, and PATCH:
 The differences between POST, PUT, and PATCH can be confusing:
 - A POST request creates a resource. The server assigns a URL for the new resource, and returns that URL to the client. 
