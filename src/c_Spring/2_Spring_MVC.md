@@ -14,9 +14,8 @@
 - REST helps in defining how the APIs should be named and how they should be accessed.
 
 ## Various Layers in MVC
-1. **User sends a request:** The user sends a request to the server.
-2. **Controller processes the request:** The Controller Layer parses the request parameters and calls the appropriate service methods.
-3. **Service Layer processes the request:** The Service Layer processes the request.
+1. **Controller processes the request:** The Controller Layer parses the request parameters and calls the appropriate service methods.
+2. **Service Layer processes the request:** The Service Layer processes the request.
    >- The Service Layer contains the business logic of the application.
    >- All the algorithms and calculations are done in the Service Layer.
    - **Service Layer interacts with the Repository Layer:** The Service Layer interacts with the Repository Layer to fetch the data from the database.
@@ -25,8 +24,8 @@
        > - This is done to separate the business logic from the data access logic.
        > - Instead of creating an object of database directly in the Service Layer, i.e., a direct dependency between the Service Layer and the database, we create an object of Repository Layer and inject it into the Service Layer.
        > - This is done to make the application loosely coupled and easy to maintain, so that in the future, if we want to update the database, or migrate from MySql to any other for example, we can do it easily.
-4. **Repository Layer fetches the data from the database:** The Repository Layer fetches the data from the database.
-5. **Database sends the data to the Repository Layer:** The database sends the data to the Repository Layer.
+3. **Repository Layer fetches the data from the database:** The Repository Layer fetches the data from the database.
+4. **Database sends the data to the Repository Layer:** The database sends the data to the Repository Layer.
      - Database contains the data of the application.
      - Information about different entities is stored in the database.
      - **These are called Models in the MVC architecture.**
