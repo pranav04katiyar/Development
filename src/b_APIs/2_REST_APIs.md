@@ -12,7 +12,7 @@ REST stands for **Representational State Transfer**.
      > - Statelessness means that servers do not save client data between requests
      > - Client requests to the server are similar to URLs you type in your browser to visit a website.
      > - The response from the server is plain data, without the typical graphical rendering of a web page.
-  - These are the most popular and flexible APIs found on the web today.
+  - REST APIs are the most popular and flexible APIs found on the web today.
   
 ### Some main design principles of RESTful APIs using HTTP:
 - REST APIs are designed around resources, which are any kind of object, data, or service that can be accessed by the client.
