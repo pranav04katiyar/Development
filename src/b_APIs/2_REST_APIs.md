@@ -4,8 +4,9 @@ REST stands for **Representational State Transfer**.
      > REST is an architectural style for building distributed systems based on hypermedia.
   - REST APIs are a standardized architecture for building APIs that uses HTTP methods to perform operations.
      > REST is independent of any underlying protocol and is not necessarily tied to HTTP. However, most common REST API implementations use HTTP as the application protocol, and this guide focuses on designing REST APIs for HTTP.
-  - A primary advantage of REST over HTTP is that it uses open standards, and does not bind the implementation of the API or the client applications to any specific implementation. 
-     > For example, a REST web service could be written in ASP.NET, and client applications can use any language or toolset that can generate HTTP requests and parse HTTP responses.
+  
+     > - A primary advantage of REST over HTTP is that it uses open standards, and does not bind the implementation of the API or the client applications to any specific implementation. 
+       >  - For example, a REST web service could be written in ASP.NET, and client applications can use any language or toolset that can generate HTTP requests and parse HTTP responses.
   - REST defines a set of functions like GET, PUT, DELETE, etc. that clients can use to access server data.
   - The main feature of REST API is statelessness.
      > - Statelessness means that servers do not save client data between requests
