@@ -51,7 +51,7 @@ REST stands for **Representational State Transfer**.
     - **DELETE Method:**
         > DELETE removes the resource at the specified URL.
   
-- ***Other HTTP Methods:***
+- ***Other HTTP Operations:***
     - **HEAD Method:**
         > The HEAD method asks for a response identical to that of a GET request, but without the response body.
     - **OPTIONS Method:**
@@ -61,7 +61,7 @@ REST stands for **Representational State Transfer**.
     - **CONNECT Method:**
         > The CONNECT method establishes a tunnel to the server identified by the target resource.
       
-#### HTTP Methods and Idempotence:
+#### Differences between POST, PUT, and PATCH:
 The differences between POST, PUT, and PATCH can be confusing:
 - A POST request creates a resource. The server assigns a URL for the new resource, and returns that URL to the client. 
     >  - In the REST model, you frequently apply POST requests to collections. 
