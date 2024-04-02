@@ -11,16 +11,18 @@ REST is an architectural style for building distributed systems based on hyperme
 - _Here are some of the main design principles of RESTful APIs using HTTP:_
     - REST APIs are designed around resources, which are any kind of object, data, or service that can be accessed by the client.
     - The type of action an API is doing should not be part of the URI. Rather, the action should be part of the HTTP method type. 
-      > For example, a URI that includes the action to be taken is not RESTful:
+      > For example, a URL that includes the action to be taken is not RESTful:
       > ```
       > https://adventure-works.com/create-order
       > ```
       - Every API is an action on one of the models.
       - The tye of action should be ideally specified by the HTTP method type instead of via a verb in the URl.
-    - A resource has an identifier, which is a URI that uniquely identifies that resource. For example, the URI for a particular customer order might be:
-      ```
-      https://adventure-works.com/orders/1
-      ```
+      > - There are multiple HTTP methods that can be used to perform different actions on the same resource, like GET, POST, PUT, PATCH, DELETE, etc. which are discussed below.
+    - A resource has an identifier, which is a URL that uniquely identifies that resource. 
+      > For example, the URI for a particular customer order might be:
+      >  ```
+      >  https://adventure-works.com/orders/1
+      >  ```
     - Clients interact with a service by exchanging representations of resources. Many web APIs use JSON as the exchange format.
       > For example, a GET request to the URI listed above might return this response body:
       > ```
