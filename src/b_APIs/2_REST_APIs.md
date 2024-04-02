@@ -16,7 +16,7 @@ REST stands for **Representational State Transfer**.
   
 ### Some main design principles of RESTful APIs using HTTP:
 - REST APIs are designed around resources, which are any kind of object, data, or service that can be accessed by the client.
-- The type of action an API is doing should not be part of the URI. Rather, the action should be part of the HTTP method type. 
+- The type of action an API is doing should not be part of the URL. Rather, the action should be part of the HTTP method type. 
     > For example, a URL that includes the action to be taken is not RESTful:
     > ```
     > https://adventure-works.com/create-order
