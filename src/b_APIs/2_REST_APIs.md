@@ -50,6 +50,16 @@ REST stands for **Representational State Transfer**.
         > PATCH performs a partial update of a resource. The request body specifies the set of changes to apply to the resource.
     - **DELETE Method:**
         > DELETE removes the resource at the specified URL.
+  
+- ***Other HTTP Methods:***
+    - **HEAD Method:**
+        > The HEAD method asks for a response identical to that of a GET request, but without the response body.
+    - **OPTIONS Method:**
+        > The OPTIONS method is used to describe the communication options for the target resource.
+    - **TRACE Method:**
+        > The TRACE method performs a message loop-back test along the path to the target resource.
+    - **CONNECT Method:**
+        > The CONNECT method establishes a tunnel to the server identified by the target resource.
       
 #### HTTP Methods and Idempotence:
 The differences between POST, PUT, and PATCH can be confusing:
