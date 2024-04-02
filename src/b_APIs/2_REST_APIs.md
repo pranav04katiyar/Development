@@ -62,8 +62,7 @@ REST stands for **Representational State Transfer**.
         > The CONNECT method establishes a tunnel to the server identified by the target resource.
       
 ###### Note:
-- All these methods are just nomenclature and can be used for any purpose.
-- The server can interpret these methods in any way it wants.
+- All these methods are just nomenclature and can be used for any purpose. The server can interpret these methods in any way it wants.
   > - For example, a server can use the POST method to return a resource, or use the GET method to delete a resource.
   > - It all depends on how the server code is implemented.
   > - For example,
