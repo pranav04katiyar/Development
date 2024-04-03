@@ -23,7 +23,11 @@ REST stands for **Representational State Transfer**.
     >    - > For example, a collection of users can be considered as a folder(/users) and each user can be considered as a file(/users/{id}).
 - REST APIs should be stateless. 
     > - The next request should not be dependent on any previous request. Each request from a client must contain all the information required by the server to fulfill the request.
-    > - The server must not store any client state between requests. 
+    > - No API should maintain any data on an individual server.
+    >   - In FTP systems, the server maintains the state of the client, because there was a 1:1 connection between the client and the server.
+    >   - In REST APIs, the server does not maintain any state of the client, as there are different requests coming from different clients can be routed to different servers.
+    >   - Each request of HTTP is independently routed, i.e, independent of the previous request, so it is not possible to maintain the state of the client in the server.
+    > - Also, the server must not store any client state between requests. 
     > - This constraint enables the server to scale and recover from partial failures more effectively.
 - The type of action an API is doing should not be part of the URL. Rather, the action should be part of the HTTP method type. 
     > For example, a URL that includes the action to be taken is not RESTful:
