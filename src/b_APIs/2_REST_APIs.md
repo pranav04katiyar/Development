@@ -16,6 +16,15 @@ REST stands for **Representational State Transfer**.
   
 ### Some main design principles of RESTful APIs using HTTP:
 - REST APIs are designed around resources, which are any kind of object, data, or service that can be accessed by the client.
+    > - Resources can be: 
+    >   - Collections of resources (like a list of users, a list of products, etc.)
+    >   - Individual or a single attribute of a resource (like details of a single user, an individual product, etc.)
+    > - Think of every resource type as a folder in a file system, and every entity as a file in that folder.
+    >    - > For example, a collection of users can be considered as a folder(/users) and each user can be considered as a file(/users/{id}).
+- REST APIs should be stateless. 
+    > - The next request should not be dependent on any previous request. Each request from a client must contain all the information required by the server to fulfill the request.
+    > - The server must not store any client state between requests. 
+    > - This constraint enables the server to scale and recover from partial failures more effectively.
 - The type of action an API is doing should not be part of the URL. Rather, the action should be part of the HTTP method type. 
     > For example, a URL that includes the action to be taken is not RESTful:
     > ```
