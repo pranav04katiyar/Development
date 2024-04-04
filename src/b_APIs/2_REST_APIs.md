@@ -58,8 +58,7 @@ REST stands for **Representational State Transfer**.
 
     >  The most popular datatype of responses are:
     >  1. JSON (JS Object Notation): 
-    >    - > Response has details as key-value pairs.
-    >    - > Is the most recommended standard of response datatype.
+    >    - > Response has details as key-value pairs. Is the most recommended standard of response datatype.
     >    - > It used less size as the response contains the info. in lesser characters.
     >  2. XML: Has larger size due to boiler code and more characters in response body.
     >  3. Protobuf: Has the smallest size among the 3.
