@@ -61,10 +61,8 @@ REST stands for **Representational State Transfer**.
     >    - > Response has details as key-value pairs.
     >    - > Is the most recommended standard of response datatype.
     >    - > It used less size as the response contains the info. in lesser characters.
-    >  2. XML:
-    >    - > Has larger size due to boiler code and more characters in response body.
-    >  3. Protobuf:
-    >    - > Has the smallest size among the 3.
+    >  2. XML: Has larger size due to boiler code and more characters in response body.
+    >  3. Protobuf: Has the smallest size among the 3.
 
 - REST APIs use a uniform interface, which helps to decouple the client and service implementations. 
     > - For REST APIs built on HTTP, the uniform interface includes using standard HTTP verbs to perform operations on resources. 
