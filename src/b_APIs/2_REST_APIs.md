@@ -21,7 +21,7 @@ REST stands for **Representational State Transfer**.
     >   - Individual or a single attribute of a resource (like details of a single user, an individual product, etc.)
     > - Think of every resource type as a folder in a file system, and every entity as a file in that folder.
     >    - > For example, a collection of users can be considered as a folder(/users) and each user can be considered as a file(/users/{id}).
-- REST APIs should be stateless. 
+- REST APIs should be stateless. This allows to build APIs that are easy to maintain, stable and can scale easily.
     > - The next request should not be dependent on any previous request. Each request from a client must contain all the information required by the server to fulfill the request.
     > - No API should maintain any data on an individual server.
     >   - In FTP systems, the server maintains the state of the client, because there was a 1:1 connection between the client and the server.
@@ -37,16 +37,34 @@ REST stands for **Representational State Transfer**.
     > - Every API is an action on one of the models.
     > - The type of action should be ideally specified by the HTTP method type instead of via a verb in the URL.
     >   - There are multiple HTTP methods that can be used to perform different actions on the same resource, like GET, POST, PUT, PATCH, DELETE, etc. which are discussed below.
+- No need to have 1:1 mapping between the API and the database tables. 
+    > - The API can be designed in such a way that it can fetch data from multiple databases and return it to the client.
+    > - The API can also be designed in such a way that it can fetch data from multiple tables and return it to the client.
+    > - The API can also be designed in such a way that it can fetch data from multiple microservices and return it to the client.
+- Don't build Chatty APIs
+    > - Chatty APIs are APIs that require multiple requests to get the required data.
+    > - Chatty APIs are not efficient and can be slow as they don't return all relevant data in a single request.
 - A resource has an identifier, which is a URL that uniquely identifies that resource. 
     > For example, the URI for a particular customer order might be:
     >  ```
     >  https://adventure-works.com/orders/1
     >  ```
-- Clients interact with a service by exchanging representations of resources. Many web APIs use JSON as the exchange format.
-    > For example, a GET request to the URI listed above might return this response body:
-    > ```
-    > {"orderId":1,"orderValue":99.90,"productId":1,"quantity":1}
-    > ```
+- REST has no constraint with respect to datatype of response.
+    >  - Clients interact with a service by exchanging representations of resources. Many web APIs use JSON as the exchange format.
+    >  For example, a GET request to the URI listed above might return this response body:
+    >  ```
+    >  {"orderId":1,"orderValue":99.90,"productId":1,"quantity":1}
+    >  ```
+
+    >  The most popular datatype of responses are:
+    >  1. JSON (JS Object Notation): 
+    >    - > Response has details as key-value pairs.
+           Is the most recommended standard of response datatype.
+           It used less size as the response contains the info. in lesser characters.
+    >  2. XML:
+           > Has larger size due to boiler code and more characters in response body.
+    >  3. Protobuf:
+           > Has the smallest size among the 3.
 
 - REST APIs use a uniform interface, which helps to decouple the client and service implementations. 
     > - For REST APIs built on HTTP, the uniform interface includes using standard HTTP verbs to perform operations on resources. 
