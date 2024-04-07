@@ -67,7 +67,7 @@ These are defined contracts/set of rules/methods which allow one application to 
  
 ## What are API Integrations?
 API integrations are software components that automatically update data between clients and servers. 
-> - Some examples of API integrations are 
+> Some examples of API integrations are 
 >  - when automatic data sync to the cloud from your phone image gallery, or 
 >  - the time and date automatically sync on your laptop when you travel to another time zone.
 
